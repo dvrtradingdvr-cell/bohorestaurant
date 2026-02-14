@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Boho Negombo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <nav id="main-nav" class="scrolled">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">BOHO</span>
+                <span class="logo-sub">NEGOMBO</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="mobile-only"><a href="contact.html">Book Table</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Book Table</a>
+                <button class="menu-toggle" id="menu-toggle"><i data-lucide="menu"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="gallery-hero">
+        <div class="gallery-hero-bg"></div>
+        <div class="gallery-hero-overlay"></div>
+        <div class="container gallery-hero-content">
+            <span class="gallery-hero-subtitle" data-aos="fade-up">Visual Journey</span>
+            <h1 class="gallery-hero-title" data-aos="fade-up" data-aos-delay="100">Moments & Flavors</h1>
+            <p class="gallery-hero-description" data-aos="fade-up" data-aos-delay="200">
+                Explore the vibrant atmosphere, exquisite dishes, and unforgettable experiences at Boho Negombo
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section gallery-section">
+            <div class="container">
+                <div class="gallery-intro" data-aos="fade-up">
+                    <h2 class="section-title">Our Gallery</h2>
+                    <p class="section-subtitle">Filter by category to explore our collection</p>
+                </div>
+
+                <div class="gallery-filters" data-aos="fade-up" data-aos-delay="100">
+                    <button class="filter-btn active" data-filter="all">
+                        <i data-lucide="grid"></i>
+                        <span>All</span>
+                    </button>
+                    <button class="filter-btn" data-filter="food">
+                        <i data-lucide="utensils"></i>
+                        <span>Food</span>
+                    </button>
+                    <button class="filter-btn" data-filter="ambiance">
+                        <i data-lucide="home"></i>
+                        <span>Ambiance</span>
+                    </button>
+                    <button class="filter-btn" data-filter="drinks">
+                        <i data-lucide="coffee"></i>
+                        <span>Drinks</span>
+                    </button>
+                    <button class="filter-btn" data-filter="events">
+                        <i data-lucide="users"></i>
+                        <span>Events</span>
+                    </button>
+                </div>
+
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Food Items -->
+                    <div class="gallery-item" data-category="food" data-aos="zoom-in">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=800"
+                            alt="Smoothie Bowl">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Boho Smoothie Bowl</h3>
+                                <p>Fresh & Healthy</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(this)">
+                                <i data-lucide="maximize-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="food" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&q=80&w=800"
+                            alt="Turkish Eggs">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Turkish Eggs</h3>
+                                <p>Signature Brunch</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(this)">
+                                <i data-lucide="maximize-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="food" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=800"
+                            alt="Burger">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Boho Beef Burger</h3>
+                                <p>Juicy & Delicious</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(this)">
+                                <i data-lucide="maximize-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Ambiance Items -->
+                    <div class="gallery-item" data-category="ambiance" data-aos="zoom-in">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800"
+                            alt="Interior">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Cozy Corners</h3>
+                                <p>Bohemian Vibes</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(this)">
+                                <i data-lucide="maximize-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="ambiance" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800"
+                            alt="Restaurant Interior">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Dining Space</h3>
+                                <p>Elegant & Warm</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(this)">
+                                <i data-lucide="maximize-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Drinks Items -->
+                    <div class="gallery-item" data-category="drinks" data-aos="zoom-in">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800"
+                            alt="Coffee">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Fresh Brews</h3>
+                                <p>Artisan Coffee</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(this)">
+                                <i data-lucide="maximize-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="drinks" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=800"
+                            alt="Cocktails">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Signature Cocktails</h3>
+                                <p>Handcrafted Drinks</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(this)">
+                                <i data-lucide="maximize-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Events Items -->
+                    <div class="gallery-item" data-category="events" data-aos="zoom-in">
+                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=800"
+                            alt="Cooking">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Open Kitchen</h3>
+                                <p>Live Cooking Experience</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(this)">
+                                <i data-lucide="maximize-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&q=80&w=800"
+                            alt="Gathering">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Special Events</h3>
+                                <p>Celebrations & Gatherings</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(this)">
+                                <i data-lucide="maximize-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- More Food -->
+                    <div class="gallery-item" data-category="food" data-aos="zoom-in">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=800"
+                            alt="Pizza">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Artisan Pizza</h3>
+                                <p>Wood-Fired Perfection</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(this)">
+                                <i data-lucide="maximize-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="food" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&q=80&w=800"
+                            alt="Pasta">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Fresh Pasta</h3>
+                                <p>Italian Classics</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(this)">
+                                <i data-lucide="maximize-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="food" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?auto=format&fit=crop&q=80&w=800"
+                            alt="Seafood">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Fresh Seafood</h3>
+                                <p>Ocean to Table</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(this)">
+                                <i data-lucide="maximize-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section gallery-cta-section">
+            <div class="container">
+                <div class="gallery-cta-card" data-aos="zoom-in">
+                    <div class="gallery-cta-icon">
+                        <i data-lucide="instagram"></i>
+                    </div>
+                    <h3 class="gallery-cta-title">Share Your Experience</h3>
+                    <p class="gallery-cta-text">
+                        Tag us on Instagram <strong>@BohoNegombo</strong> and use <strong>#BohoNegombo</strong> to be
+                        featured in our gallery!
+                    </p>
+                    <a href="https://instagram.com" target="_blank" class="btn btn-primary">
+                        <i data-lucide="instagram"></i>
+                        Follow Us on Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">
+            <i data-lucide="x"></i>
+        </button>
+        <button class="lightbox-prev" onclick="navigateLightbox(-1)">
+            <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="lightbox-next" onclick="navigateLightbox(1)">
+            <i data-lucide="chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Boho Negombo. Designed for the soul.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        lucide.createIcons();
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out',
+            once: true,
+            offset: 100
+        });
+
+        // Gallery Filter Functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                // Filter items
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => item.style.opacity = '1', 10);
+                    } else {
+                        item.style.opacity = '0';
+                        setTimeout(() => item.style.display = 'none', 300);
+                    }
+                });
+            });
+        });
+
+        // Lightbox Functionality
+        let currentImageIndex = 0;
+        const images = Array.from(document.querySelectorAll('.gallery-item img'));
+
+        function openLightbox(button) {
+            const item = button.closest('.gallery-item');
+            const img = item.querySelector('img');
+            const title = item.querySelector('.gallery-info h3').textContent;
+            const desc = item.querySelector('.gallery-info p').textContent;
+
+            currentImageIndex = images.indexOf(img);
+
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox-title').textContent = title;
+            document.getElementById('lightbox-desc').textContent = desc;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+            lucide.createIcons();
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function navigateLightbox(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) currentImageIndex = images.length - 1;
+            if (currentImageIndex >= images.length) currentImageIndex = 0;
+
+            const item = images[currentImageIndex].closest('.gallery-item');
+            const title = item.querySelector('.gallery-info h3').textContent;
+            const desc = item.querySelector('.gallery-info p').textContent;
+
+            document.getElementById('lightbox-img').src = images[currentImageIndex].src;
+            document.getElementById('lightbox-title').textContent = title;
+            document.getElementById('lightbox-desc').textContent = desc;
+        }
+
+        // Close lightbox on ESC key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') navigateLightbox(-1);
+            if (e.key === 'ArrowRight') navigateLightbox(1);
+        });
+
+        // Close lightbox on background click
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox') closeLightbox();
+        });
+    </script>
+</body>
+
+</html>

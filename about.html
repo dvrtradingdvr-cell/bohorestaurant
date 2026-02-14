@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | Boho Negombo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <nav id="main-nav" class="scrolled">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">BOHO</span>
+                <span class="logo-sub">NEGOMBO</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="mobile-only"><a href="contact.html">Book Table</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Book Table</a>
+                <button class="menu-toggle" id="menu-toggle"><i data-lucide="menu"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="sub-hero">
+        <div class="container">
+            <h1>Our Story</h1>
+            <p>From a dream to a sanctuary on Negombo's coast</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800"
+                        alt="Gaia at Boho" style="border-radius: 20px; box-shadow: var(--shadow);">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">The Gaia Vision</h2>
+                    <p class="section-lead">"I wanted to create a space that felt like a warm hug."</p>
+                    <p class="section-text">Boho Negombo was founded by Gaia, a traveler with a heart for Sri Lanka. Her
+                        vision was simple: combine the laid-back bohemian aesthetic with the rich culinary heritage of
+                        the island and global fusion flavors.</p>
+                    <p class="section-text">Every piece of furniture, every macramé hanging, and every plant in our
+                        restaurant was handpicked to create an environment where you can truly escape. We aren't just a
+                        restaurant; we are a community of food lovers and coastal souls.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light section">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 class="section-title">Why Boho?</h2>
+                </div>
+                <div class="stats-grid" style="text-align: center;">
+                    <div class="stat-item">
+                        <i data-lucide="heart" style="color: var(--primary); margin: 0 auto 1rem;"></i>
+                        <span class="stat-num">Made with Love</span>
+                        <p>Every dish is crafted with care and fresh local produce.</p>
+                    </div>
+                    <div class="stat-item">
+                        <i data-lucide="leaf" style="color: var(--primary); margin: 0 auto 1rem;"></i>
+                        <span class="stat-num">Ethically Sourced</span>
+                        <p>Supporting our local farmers and fishermen in Negombo.</p>
+                    </div>
+                    <div class="stat-item">
+                        <i data-lucide="music" style="color: var(--primary); margin: 0 auto 1rem;"></i>
+                        <span class="stat-num">Soulful Vibes</span>
+                        <p>Carefully curated playlists to match the coastal atmosphere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Boho Negombo. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

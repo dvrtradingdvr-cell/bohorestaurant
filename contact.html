@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Reservations | Boho Negombo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .form-control {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-control label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-control input,
+        .form-control textarea,
+        .form-control select {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-family: inherit;
+        }
+
+        .form-control input:focus {
+            outline: 2px solid var(--primary);
+            border-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="main-nav" class="scrolled">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">BOHO</span>
+                <span class="logo-sub">NEGOMBO</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="mobile-only"><a href="contact.html">Book Table</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Book Table</a>
+                <button class="menu-toggle" id="menu-toggle"><i data-lucide="menu"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="sub-hero">
+        <div class="container">
+            <h1>Join Us</h1>
+            <p>Reserve your table at our coastal sanctuary</p>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container grid">
+            <div class="reservation-form">
+                <h2 class="section-title">Book a Table</h2>
+                <form>
+                    <div class="form-control">
+                        <label>Name</label>
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-control">
+                            <label>Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-control">
+                            <label>Guests</label>
+                            <select>
+                                <option>1 Person</option>
+                                <option>2 People</option>
+                                <option>4 People</option>
+                                <option>6+ People</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <label>Special Request</label>
+                        <textarea rows="4" placeholder="Any allergies or special occasions?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                </form>
+            </div>
+            <div class="contact-details">
+                <h2 class="section-title">Location</h2>
+                <ul class="contact-list" style="margin-top: 0.5rem;">
+                    <li><i data-lucide="map-pin"></i> <a
+                            href="https://www.google.com/maps/search/?api=1&query=Boho+Negombo+Sri+Lanka"
+                            target="_blank" class="address-link">Next to Jetwing Blue, Negombo</a></li>
+                    <li><i data-lucide="phone"></i> <a href="tel:+94763785873"
+                            style="color: inherit; text-decoration: none;">+94 76 378 5873</a></li>
+                    <li><i data-lucide="mail"></i> <span>hello@bohonegombo.com</span></li>
+                </ul>
+                <div class="map-container" style="margin-top: 2rem;">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Boho%20Negombo+Sri+Lanka&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="300" style="border:0; border-radius: 20px; box-shadow: var(--shadow);"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container center">
+            <p>&copy; 2026 Boho Negombo. See you at the beach!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

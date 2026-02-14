@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Boho Negombo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <nav id="main-nav" class="scrolled">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">BOHO</span>
+                <span class="logo-sub">NEGOMBO</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="mobile-only"><a href="contact.html">Book Table</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Book Table</a>
+                <button class="menu-toggle" id="menu-toggle"><i data-lucide="menu"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="menu-hero">
+        <div class="menu-hero-bg"></div>
+        <div class="menu-hero-overlay"></div>
+        <div class="container menu-hero-content">
+            <span class="menu-hero-subtitle" data-aos="fade-up">Discover Our Flavors</span>
+            <h1 class="menu-hero-title" data-aos="fade-up" data-aos-delay="100">Culinary Excellence</h1>
+            <p class="menu-hero-description" data-aos="fade-up" data-aos-delay="200">
+                From sunrise brunch to moonlit cocktails, explore our carefully crafted menu featuring fresh local
+                ingredients and international inspiration
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section menu-section">
+            <div class="container">
+                <div class="menu-intro" data-aos="fade-up">
+                    <h2 class="section-title">Explore Our Menu</h2>
+                    <p class="section-subtitle">Select a category to view our delicious offerings</p>
+                </div>
+
+                <div class="menu-tabs" data-aos="fade-up" data-aos-delay="100">
+                    <button class="tab-btn active" data-category="brunch">
+                        <i data-lucide="coffee"></i>
+                        <span>Brunch</span>
+                    </button>
+                    <button class="tab-btn" data-category="starters">
+                        <i data-lucide="salad"></i>
+                        <span>Starters</span>
+                    </button>
+                    <button class="tab-btn" data-category="mains">
+                        <i data-lucide="utensils"></i>
+                        <span>Mains</span>
+                    </button>
+                    <button class="tab-btn" data-category="seafood">
+                        <i data-lucide="fish"></i>
+                        <span>Seafood</span>
+                    </button>
+                    <button class="tab-btn" data-category="pizzas">
+                        <i data-lucide="pizza"></i>
+                        <span>Pizzas</span>
+                    </button>
+                    <button class="tab-btn" data-category="pastas">
+                        <i data-lucide="soup"></i>
+                        <span>Pastas</span>
+                    </button>
+                    <button class="tab-btn" data-category="sandwiches">
+                        <i data-lucide="sandwich"></i>
+                        <span>Sandwiches</span>
+                    </button>
+                    <button class="tab-btn" data-category="desserts">
+                        <i data-lucide="cake"></i>
+                        <span>Desserts</span>
+                    </button>
+                    <button class="tab-btn" data-category="drinks">
+                        <i data-lucide="cup-soda"></i>
+                        <span>Drinks</span>
+                    </button>
+                    <button class="tab-btn" data-category="bar">
+                        <i data-lucide="wine"></i>
+                        <span>Bar</span>
+                    </button>
+                </div>
+
+                <div class="menu-grid" id="menu-items">
+                    <!-- Dynamic Items -->
+                </div>
+            </div>
+        </section>
+
+        <section class="section menu-cta-section">
+            <div class="container">
+                <div class="menu-cta-card" data-aos="zoom-in">
+                    <div class="menu-cta-icon">
+                        <i data-lucide="info"></i>
+                    </div>
+                    <h3 class="menu-cta-title">Special Requirements?</h3>
+                    <p class="menu-cta-text">
+                        Most of our menu can be made Vegan or Gluten-Free. Please inform our staff about any dietary
+                        requirements or allergies.
+                    </p>
+                    <div class="menu-cta-actions">
+                        <a href="contact.html" class="btn btn-primary">
+                            <i data-lucide="calendar"></i>
+                            Book a Table
+                        </a>
+                        <button class="btn btn-outline">
+                            <i data-lucide="download"></i>
+                            Download Menu PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Boho Negombo. Designed for the soul.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        lucide.createIcons();
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out',
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+
+</html>
